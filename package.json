@@ -1,0 +1,19 @@
+{
+  "name": "cf-react-app-cli",
+  "version": "1.0.0",
+  "description": "create a vue-app with typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-app": "./bin/create-react-app.js"
+  },
+  "author": "DimaLiLongJi",
+  "license": "MIT",
+  "homepage": "https://github.com/DimaLiLongJi/react-ts-app-cli#readme",
+  "devDependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.17.1"
+  }
+}
