@@ -1,4 +1,4 @@
-# template
+# ts-template
 
 ## Project setup
 ```
