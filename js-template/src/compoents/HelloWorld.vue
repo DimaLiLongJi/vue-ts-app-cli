@@ -18,7 +18,7 @@ export default {
 div {
   background: url('../assets/logo.png') no-repeat;
 }
-h3 {
+h1 {
   margin: 40px 0 0;
 }
 ul {

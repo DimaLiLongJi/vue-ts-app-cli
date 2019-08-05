@@ -2,7 +2,7 @@ const glob = require('glob');
 const path = require('path');
 
 const ENTRY = 'main.js';
-const PAGE_FLODER = path.resolve(__dirname, './pages/');
+const PAGE_FLODER = path.resolve(__dirname, './src/pages/');
 const PAGES = PAGE_FLODER + '/**/' + ENTRY;
 
 /**
@@ -45,6 +45,21 @@ module.exports = {
         ws: false,
         changeOrigin: true
       },
+    }
+  },
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: [
+          require('autoprefixer')({
+            browsers: [
+              'Android >= 4.0',
+              'iOS >= 7.0'
+            ]
+          }),
+          require('./utils/postcss-px-to-rem-vw')()
+        ]
+      }
     }
   }
 };
