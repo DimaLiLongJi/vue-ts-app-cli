@@ -5,9 +5,8 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
-import { getMethod } from '@/utils/service';
+import HelloWorld from '../../../compoents/HelloWorld.vue';
+import { getMethod } from '../../../utils/http';
 
 export default {
   name: 'home',
@@ -15,7 +14,7 @@ export default {
     HelloWorld
   },
   created() {
-    console.log(getMethod);
+    // console.log(getMethod);
   }
 };
 </script>
